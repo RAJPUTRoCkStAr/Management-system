@@ -78,6 +78,6 @@ urlpatterns = [
 
 
 
-    path('aboutus', views.aboutus_view),
+    # path('aboutus', aboutus_view),
     path('contactus', views.contactus_view),
 ]

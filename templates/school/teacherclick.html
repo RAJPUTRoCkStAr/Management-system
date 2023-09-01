@@ -1,15 +1,47 @@
 {% extends 'school/homebase.html' %}
 {% block content %}
-<br>
-<br>
-<div class="jumbotron" style="margin-bottom:0px;">
-  <h1 class="display-4">Teacher Login Panel</h1>
-  <p class="lead">Welcome to School Management System.</p>
+<style>
+  body {
+      background-color: #f4f4f4;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  .jumbotron {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 0;
+  }
+
+  .jumbotron h1 {
+      font-size: 3rem;
+  }
+
+  .lead {
+      font-size: 1.25rem;
+  }
+
+  .btn-danger {
+      background-color: #dc3545;
+      border-color: #dc3545;
+  }
+
+  .btn-success {
+      background-color: #28a745;
+      border-color: #28a745;
+  }
+</style>
+</head>
+<body>
+<div class="jumbotron">
+  <h1 class="display-4">Trainer Login Panel</h1>
+  <p class="lead">Welcome to NSTI Management System.</p>
   <hr class="my-4">
-  <p>Please select any to contiue...</p>
+  <p>Please select any to continue...</p>
   <p class="lead">
-    <a class="btn btn-danger btn-lg" href="teachersignup" role="button">Apply Now</a>
-    <a class="btn btn-success btn-lg" href="teacherlogin" role="button">Login</a>
+      <a class="btn btn-danger btn-lg" href="teachersignup" role="button">Apply Now</a>
+      <a class="btn btn-success btn-lg" href="teacherlogin" role="button">Login</a>
   </p>
 </div>
 {% endblock content %}

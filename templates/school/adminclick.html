@@ -3,18 +3,58 @@
 
 {% block content %}
 
-<br>
-<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Panel</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add custom CSS styles here */
+        body {
+            background-color: #f4f4f4;
+        }
+        .jumbotron {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 80px;
+            margin-bottom: 0;
+        }
+        .jumbotron h1 {
+            font-size: 3rem;
+        }
+        .lead {
+            font-size: 1.25rem;
+        }
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Admin Login Panel</h1>
+        <p class="lead">Welcome to School Management System.</p>
+        <hr class="my-4">
+        <p>Please select any to continue...</p>
+        <p class="lead">
+            <a class="btn btn-danger btn-lg" href="adminsignup" role="button">Sign Up</a>
+            <a class="btn btn-success btn-lg" href="adminlogin" role="button">Login</a>
+        </p>
+    </div>
 
-<div class="jumbotron" style="margin-bottom:0px;">
-  <h1 class="display-4">Admin Login Panel</h1>
-  <p class="lead">Welcome to School Management System.</p>
-  <hr class="my-4">
-  <p>Please select any to contiue...</p>
-  <p class="lead">
-    <a class="btn btn-danger btn-lg" href="adminsignup" role="button">Sign Up</a>
-    <a class="btn btn-success btn-lg" href="adminlogin" role="button">Login</a>
-  </p>
-</div>
+    <!-- Add Bootstrap JS and jQuery links here (if needed) -->
+
+</body>
+</html>
+
 
 {% endblock content %}

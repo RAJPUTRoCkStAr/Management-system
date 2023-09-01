@@ -4,11 +4,15 @@
 
 <head>
   <meta charset="utf-8">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
   <style type="text/css">
     .bs-example {
@@ -30,7 +34,8 @@
 
   <div class="bs-example">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-      <a href="/" class="navbar-brand">School Management System</a>
+      <img src="static/images/icon.jpg" width="50px" height="50px" alt="NATIONAL SKILL TRAINING INSTITUTE">
+      <a href="/" class="navbar-brand ps-4" >NATIONAL SKILL TRAINING INSTITUTE</a>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,10 +48,25 @@
         </div>
 
         <div class="navbar-nav">
-          <a href="/" class="nav-item nav-link active">Home</a>
-          <a href="/adminclick" class="nav-item nav-link">Admin</a>
-          <a href="/teacherclick" class="nav-item nav-link">Teacher</a>
-          <a href="/studentclick" class="nav-item nav-link">Student</a>
+          <a href="/" class="nav-item nav-link active">
+            <i class="fa-solid fa-house fa-beat fa-sm" style="color: #e51025;"></i>
+            Home</a>
+            <div class="dropdown">
+              <a class="btn btn-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user" style="color: #09ec2f;"></i>
+                Sign IN
+              </a>
+            
+              <ul class="dropdown-menu bg-dark text-light">
+                <li><a href="/adminclick" class="dropdown-item text-danger">
+                  <i class="fa-solid fa-user-secret fa-beat-fade pe-2" style="color: #e30202;"></i>Admin</a></li>
+                <li><a href="/teacherclick" class="dropdown-item text-danger ">
+                  <i class="fa-sharp fa-solid fa-user-tie fa-beat pe-2" style="color: #e20808;"></i>Teacher</a></li>
+                <li><a href="/studentclick" class="dropdown-item text-danger ">
+                  <i class="fa-sharp fa-regular fa-user fa-beat pe-2" style="color: #ec0909;"></i>
+                  Student</a></li>
+              </ul>
+            </div>
         </div>
 
 
